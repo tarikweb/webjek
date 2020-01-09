@@ -20,8 +20,7 @@ volumes: [
               echo '###### Git START ########'
               echo $GIT_COMMIT
               echo '###### Git END ########'
-              echo 'export IMAGE=489155402474.dkr.ecr.eu-west-1.amazonaws.com/webjek
-:'$GIT_COMMIT > ./load_env.sh
+              echo 'export IMAGE=489155402474.dkr.ecr.eu-west-1.amazonaws.com/webjek:'$GIT_COMMIT > ./load_env.sh
               echo 'export IMAGELATEST=489155402474.dkr.ecr.eu-west-1.amazonaws.com/webjek:latest' >> ./load_env.sh
               echo 'export GIT_COMMIT='$GIT_COMMIT >> ./load_env.sh
               echo 'export REPO=489155402474.dkr.ecr.eu-west-1.amazonaws.com/webjek' >> ./load_env.sh
