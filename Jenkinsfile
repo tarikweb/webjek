@@ -39,7 +39,7 @@ volumes: [
               container('aws'){
                   sh '''
                   cd webjek
-                  aws ecr get-login --region eu-west-1 --no include-email > Docker-Login
+                  aws ecr get-login --no-include-email --region eu-west-1 > Docker-Login
 
                   '''
               }
