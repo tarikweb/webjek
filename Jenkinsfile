@@ -46,7 +46,7 @@ volumes: [
               container('docker'){
                   sh '''
                   cd webjek
-                  cat load_env.sh
+                  cat Docker-Login
                   . ./load_env.sh
                   $(cat Docker-Login)
                   docker build . -t $IMAGE
