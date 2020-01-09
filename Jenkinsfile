@@ -48,7 +48,7 @@ volumes: [
                   cat Docker-Login
                   . ./load_env.sh
                   $(cat Docker-Login)
-                  docker build . -t webjek:'$GIT_COMMIT
+                  docker build . -t webjek:$GIT_COMMIT
                   docker tag $IMAGE $IMAGELATEST
                   docker push $IMAGE
                   docker push $IMAGELATEST
